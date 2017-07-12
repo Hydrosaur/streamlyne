@@ -1,0 +1,1 @@
+$("#search-query-display").text(urlParams.get("q"));

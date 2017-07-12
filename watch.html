@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Streamlyne</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/4-col-portfolio.css" rel="stylesheet">
+
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav id="navbar" role="navigation">
+	</nav>
+
+	<!-- Page Content -->
+	<div class="container" id="body">
+
+		<!-- Page Heading -->
+		<hr/>
+		<!-- /.row -->
+		<div class="row">
+			<div class="col-md-8">
+				<!-- <div id="video-wrapper"> -->
+					<video id="main-video" controls>
+						<source src="/examples/example-vid.webm" type="video/webm">
+						Your browser does not support the video tag.
+					</video>
+					<!-- <div class="control">
+						<div class="btmControl">
+							<div class="btnPlay btn" title="Play/Pause video"><span class="icon-play"></span></div>
+							<div class="progress-bar">
+								<div class="progress">
+									<span class="bufferBar"></span>
+									<span class="timeBar"></span>
+								</div>
+							</div>
+							<div class="volume" title="Set volume">
+								<span class="volumeBar"></span>
+							</div>
+							<div class="sound sound2 btn" title="Mute/Unmute sound"><span class="icon-sound"></span></div>
+							<div class="btnFS btn" title="Switch to full screen"><span class="icon-fullscreen"></span></div>
+						</div>
+					</div> -->
+				<!-- </div> -->
+				<h1>The Example: The Movie <div id="video-tags">
+					<span class="label label-primary">#Cool</span>
+					<span class="label label-primary">#Funny</span>
+					<span class="label label-primary">#REKT</span>
+					<span class="label label-primary">#Amazing</span>
+				</div></h1>
+				<hr/>
+				<div class="media creator-container">
+					<div class="media-left">
+						<a href="#">
+							<img class="media-object" src="/examples/example-icon.png">
+						</a>
+					</div>
+					<div class="media-body">
+						<a class="media-heading">-Electron-</a><br>
+						<button type="button" id="subscribe-btn" class="btn btn-info" data-subbed="false"><span class="text-default">Subscribe</span> <span class="badge">42</span></button>
+						<!-- <div class="btn-group" role="group">
+							<button type="button" class="btn btn-info">Subscribe</button>
+							<button type="button" class="btn btn-default"><span class="badge">42</span></button>
+						</div> -->
+						<p class="pull-right"><span class="view-num text-primary">970124219</span> views</p>
+					</div>
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title"><b>Description</b></h3>
+					</div>
+					<div class="panel-body">
+						This is a cool video you should watch, so please watch it.
+					</div>
+				</div>
+				<hr/>
+				<div class="panel panel-success" id="user-comment-panel">
+					<div class="panel-heading">
+						<h3 class="panel-title"><b>Comment</b></h3>
+					</div>
+					<div class="panel-body">
+						<textarea id="comment-input" placeholder="Your super witty/informative/stupid comment goes here."></textarea>
+					</div>
+					<hr/>
+					<div class="panel-body">
+						<ul class="media-list" id="comments">
+							<li class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="/examples/example-icon.png">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Hydrosaur</h4>
+									<span class="comment-body">Hi there!</span>
+								</div>
+								<hr/>
+							</li>
+							<li class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="/examples/example-icon.png">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Hydrosaur</h4>
+									<span class="comment-body">Hi there!</span>
+								</div>
+								<hr/>
+							</li>
+							<li class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="/examples/example-icon.png">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Hydrosaur</h4>
+									<span class="comment-body">Hi there!</span>
+								</div>
+								<hr/>
+							</li>
+						</ul>
+					</div>
+					</div>
+						<div class="panel panel-default" id="comment-panel">
+					</div>
+			</div>
+			<div class="col-md-4" id="video-well">
+				<div class="well well-lg">
+					<div class="media video-thumbs">
+						<div class="media-left">
+				    		<a href="#">
+				    			<img class="media-object" src="/examples/example-icon.png">
+				    		</a>
+				  		</div>
+					<div class="media-body">
+				    	<a class="media-heading">The Example: The Movie</a><br>
+				    	<p id="author">-Electron-<p>
+				    	<p><span id="views">3,763,522</span> views</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<footer>
+			<div class="row">
+			</div>
+			<!-- /.row -->
+		</footer>
+
+	</div>
+	<!-- /.container -->
+
+	<!-- jQuery -->
+	<!-- <script src="js/jquery.js"></script> -->
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/watch.js"></script>
+</body>
+
+</html>

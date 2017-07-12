@@ -1,0 +1,193 @@
+/*!
+ * Start Bootstrap - 4 Col Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+	padding-top: 20px;
+	font-family: 'Nunito', sans-serif;
+	background-color: #f1f1f1;
+}
+
+.portfolio-item {
+	margin-bottom: 25px;
+}
+
+.portfolio-item img {
+	box-shadow: 1px 1px 5px #888888;
+	transition: box-shadow 0.3s ease;
+}
+
+.portfolio-item img:hover {
+	box-shadow: 5px 5px 10px #888888;
+}
+
+#body {
+	border: 3px solid #888888;
+	border-radius: 30px;
+	background-color: white;
+}
+
+.container#body {
+	width: 1400px;
+}
+
+#main-video {
+	width: 100%;
+}
+
+#video-well .well-lg {
+	padding: 10px;
+}
+
+.video-thumbs img {
+	width: 64px;
+}
+
+.video-thumbs .media-heading {
+	font-size: 16px;
+	cursor: pointer;
+	color: #337ab7;
+}
+
+#video-tags {
+	padding-top: 1%;
+	font-size: 22px;
+}
+
+.video-thumbs .media-body {
+	color: grey;
+}
+
+.view-num {
+	font-size: 24px;
+}
+
+.video-container {
+	padding-left: 1%;
+}
+
+.channel-avatar {
+	width: 6%;
+}
+
+.creator-container {
+	display: inline;
+}
+
+.creator-container .media-heading {
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.creator-container button {
+
+}
+
+.creator-container img {
+	width: 64px;
+}
+
+
+#img-brand {
+	width: 230px;
+	padding-top: 1%;
+	padding-left: 1%;
+	float: left;
+}
+
+#navbar {
+	background-color: lightgray;
+	position: fixed;
+	top: 89%;
+	height: 11%;
+	width: 100%;
+	z-index: 9999;
+}
+
+#search-input {
+	border: 1px solid #888888;
+	border-radius: 10px;
+}
+
+button:hover {
+	outline:0;
+}
+
+#comment-input {
+	width: 100%;
+	resize: vertical;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#user-comment-panel {
+	padding: 0;
+}
+
+#comments .media-heading {
+	color: gray;
+}
+#comments .media-object {
+	width: 56px;
+}
+
+button:active {
+	outline: none;
+	border: none;
+}
+
+.slidebtn {
+	animation-name: slidebutton;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+.slideinput {
+	animation-name: slideinput;
+	animation-duration: 1s;
+	color: black;
+}
+
+#icon-bar {
+	width: 100%;
+	background-color: #555;
+	display: inline;
+}
+
+#icon-bar a {
+	float: left;
+	width: 10%;
+	text-align: center;
+	padding: 1.5% 0;
+	transition: all 0.3s ease;
+	color: white;
+	font-size: 36px;
+}
+
+#icon-bar a:hover {
+	background-color: #0878ce; /* Add a hover color */
+}
+
+.active span {
+	color: #0994FF; /* Add an active/current color */
+}
+
+.page-header {
+	color: #0994FF;
+}
+
+footer {
+	margin: 50px 0;
+}
+
+@keyframes slideinput {
+	from {width: 100%;}
+	to {width: 220%;}
+}
+@keyframes slidebutton {
+	from {}
+	to {margin-right: 10%;}
+}

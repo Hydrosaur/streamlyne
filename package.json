@@ -1,0 +1,15 @@
+{
+  "name": "streamlyne",
+  "version": "1.0.0",
+  "description": "A feature-rich video content sharing platform.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "Korbin Deary",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+}
